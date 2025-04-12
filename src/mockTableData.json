@@ -1,0 +1,1616 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "scenario": "Scenario 0",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 329.97,
+      "unit": "K",
+      "kpi_value": 500.89
+    },
+    {
+      "id": 2,
+      "scenario": "Scenario 1",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 325.14,
+      "unit": "K",
+      "kpi_value": 461.34
+    },
+    {
+      "id": 3,
+      "scenario": "Scenario 2",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 344.45,
+      "unit": "K",
+      "kpi_value": 483.21
+    },
+    {
+      "id": 4,
+      "scenario": "Scenario 3",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 364.52,
+      "unit": "K",
+      "kpi_value": 478.56
+    },
+    {
+      "id": 5,
+      "scenario": "Scenario 4",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 314.10,
+      "unit": "K",
+      "kpi_value": 432.98
+    },
+    {
+      "id": 6,
+      "scenario": "Scenario 5",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 305.88,
+      "unit": "K",
+      "kpi_value": 445.72
+    },
+    {
+      "id": 7,
+      "scenario": "Scenario 6",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 316.58,
+      "unit": "K",
+      "kpi_value": 462.19
+    },
+    {
+      "id": 8,
+      "scenario": "Scenario 7",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.31,
+      "unit": "K",
+      "kpi_value": 470.35
+    },
+    {
+      "id": 9,
+      "scenario": "Scenario 8",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.70,
+      "unit": "K",
+      "kpi_value": 455.67
+    },
+    {
+      "id": 10,
+      "scenario": "Scenario 9",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 337.52,
+      "unit": "K",
+      "kpi_value": 481.25
+    },
+    {
+      "id": 11,
+      "scenario": "Scenario 10",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 340.21,
+      "unit": "K",
+      "kpi_value": 453.89
+    },
+    {
+      "id": 12,
+      "scenario": "Scenario 11",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 325.96,
+      "unit": "K",
+      "kpi_value": 468.47
+    },
+    {
+      "id": 13,
+      "scenario": "Scenario 12",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 318.63,
+      "unit": "K",
+      "kpi_value": 446.58
+    },
+    {
+      "id": 14,
+      "scenario": "Scenario 13",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 352.37,
+      "unit": "K",
+      "kpi_value": 469.21
+    },
+    {
+      "id": 15,
+      "scenario": "Scenario 14",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 330.12,
+      "unit": "K",
+      "kpi_value": 471.93
+    },
+    {
+      "id": 16,
+      "scenario": "Scenario 15",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.52,
+      "unit": "K",
+      "kpi_value": 482.76
+    },
+    {
+      "id": 17,
+      "scenario": "Scenario 16",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 332.86,
+      "unit": "K",
+      "kpi_value": 475.31
+    },
+    {
+      "id": 18,
+      "scenario": "Scenario 17",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 327.45,
+      "unit": "K",
+      "kpi_value": 442.87
+    },
+    {
+      "id": 19,
+      "scenario": "Scenario 18",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 341.27,
+      "unit": "K",
+      "kpi_value": 482.04
+    },
+    {
+      "id": 20,
+      "scenario": "Scenario 19",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.93,
+      "unit": "K",
+      "kpi_value": 439.62
+    },
+    {
+      "id": 21,
+      "scenario": "Scenario 20",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 343.18,
+      "unit": "K",
+      "kpi_value": 480.94
+    },
+    {
+      "id": 22,
+      "scenario": "Scenario 21",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 359.76,
+      "unit": "K",
+      "kpi_value": 474.28
+    },
+    {
+      "id": 23,
+      "scenario": "Scenario 22",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 338.45,
+      "unit": "K",
+      "kpi_value": 478.36
+    },
+    {
+      "id": 24,
+      "scenario": "Scenario 23",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.08,
+      "unit": "K",
+      "kpi_value": 485.12
+    },
+    {
+      "id": 25,
+      "scenario": "Scenario 24",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 320.91,
+      "unit": "K",
+      "kpi_value": 450.76
+    },
+    {
+      "id": 26,
+      "scenario": "Scenario 25",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 335.78,
+      "unit": "K",
+      "kpi_value": 455.23
+    },
+    {
+      "id": 27,
+      "scenario": "Scenario 26",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 322.42,
+      "unit": "K",
+      "kpi_value": 467.82
+    },
+    {
+      "id": 28,
+      "scenario": "Scenario 27",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.85,
+      "unit": "K",
+      "kpi_value": 472.59
+    },
+    {
+      "id": 29,
+      "scenario": "Scenario 28",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 339.65,
+      "unit": "K",
+      "kpi_value": 479.32
+    },
+    {
+      "id": 30,
+      "scenario": "Scenario 29",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 347.94,
+      "unit": "K",
+      "kpi_value": 465.71
+    },
+    {
+      "id": 31,
+      "scenario": "Scenario 30",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 319.76,
+      "unit": "K",
+      "kpi_value": 458.93
+    },
+    {
+      "id": 32,
+      "scenario": "Scenario 31",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.28,
+      "unit": "K",
+      "kpi_value": 444.58
+    },
+    {
+      "id": 33,
+      "scenario": "Scenario 32",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 333.49,
+      "unit": "K",
+      "kpi_value": 477.14
+    },
+    {
+      "id": 34,
+      "scenario": "Scenario 33",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 356.81,
+      "unit": "K",
+      "kpi_value": 473.95
+    },
+    {
+      "id": 35,
+      "scenario": "Scenario 34",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 310.24,
+      "unit": "K",
+      "kpi_value": 436.29
+    },
+    {
+      "id": 36,
+      "scenario": "Scenario 35",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.97,
+      "unit": "K",
+      "kpi_value": 484.62
+    },
+    {
+      "id": 37,
+      "scenario": "Scenario 36",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 328.57,
+      "unit": "K",
+      "kpi_value": 451.43
+    },
+    {
+      "id": 38,
+      "scenario": "Scenario 37",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 342.69,
+      "unit": "K",
+      "kpi_value": 456.28
+    },
+    {
+      "id": 39,
+      "scenario": "Scenario 38",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 334.85,
+      "unit": "K",
+      "kpi_value": 475.62
+    },
+    {
+      "id": 40,
+      "scenario": "Scenario 39",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.42,
+      "unit": "K",
+      "kpi_value": 428.75
+    },
+    {
+      "id": 41,
+      "scenario": "Scenario 40",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 341.93,
+      "unit": "K",
+      "kpi_value": 487.32
+    },
+    {
+      "id": 42,
+      "scenario": "Scenario 41",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 331.25,
+      "unit": "K",
+      "kpi_value": 449.87
+    },
+    {
+      "id": 43,
+      "scenario": "Scenario 42",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 327.36,
+      "unit": "K",
+      "kpi_value": 471.28
+    },
+    {
+      "id": 44,
+      "scenario": "Scenario 43",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.24,
+      "unit": "K",
+      "kpi_value": 489.45
+    },
+    {
+      "id": 45,
+      "scenario": "Scenario 44",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 323.78,
+      "unit": "K",
+      "kpi_value": 448.92
+    },
+    {
+      "id": 46,
+      "scenario": "Scenario 45",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 363.12,
+      "unit": "K",
+      "kpi_value": 476.83
+    },
+    {
+      "id": 47,
+      "scenario": "Scenario 46",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 314.49,
+      "unit": "K",
+      "kpi_value": 459.14
+    },
+    {
+      "id": 48,
+      "scenario": "Scenario 47",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.17,
+      "unit": "K",
+      "kpi_value": 464.53
+    },
+    {
+      "id": 49,
+      "scenario": "Scenario 48",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 336.24,
+      "unit": "K",
+      "kpi_value": 479.67
+    },
+    {
+      "id": 50,
+      "scenario": "Scenario 49",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 349.32,
+      "unit": "K",
+      "kpi_value": 468.19
+    },
+    {
+      "id": 51,
+      "scenario": "Scenario 50",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 308.73,
+      "unit": "K",
+      "kpi_value": 431.58
+    },
+    {
+      "id": 52,
+      "scenario": "Scenario 51",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.91,
+      "unit": "K",
+      "kpi_value": 457.36
+    },
+    {
+      "id": 53,
+      "scenario": "Scenario 52",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 331.47,
+      "unit": "K",
+      "kpi_value": 472.85
+    },
+    {
+      "id": 54,
+      "scenario": "Scenario 53",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 338.94,
+      "unit": "K",
+      "kpi_value": 452.41
+    },
+    {
+      "id": 55,
+      "scenario": "Scenario 54",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 324.15,
+      "unit": "K",
+      "kpi_value": 466.72
+    },
+    {
+      "id": 56,
+      "scenario": "Scenario 55",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.39,
+      "unit": "K",
+      "kpi_value": 480.18
+    },
+    {
+      "id": 57,
+      "scenario": "Scenario 56",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 327.22,
+      "unit": "K",
+      "kpi_value": 454.76
+    },
+    {
+      "id": 58,
+      "scenario": "Scenario 57",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 354.63,
+      "unit": "K",
+      "kpi_value": 471.45
+    },
+    {
+      "id": 59,
+      "scenario": "Scenario 58",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 343.58,
+      "unit": "K",
+      "kpi_value": 483.91
+    },
+    {
+      "id": 60,
+      "scenario": "Scenario 59",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.78,
+      "unit": "K",
+      "kpi_value": 435.24
+    },
+    {
+      "id": 61,
+      "scenario": "Scenario 60",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 346.17,
+      "unit": "K",
+      "kpi_value": 491.67
+    },
+    {
+      "id": 62,
+      "scenario": "Scenario 61",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 321.53,
+      "unit": "K",
+      "kpi_value": 440.82
+    },
+    {
+      "id": 63,
+      "scenario": "Scenario 62",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 336.91,
+      "unit": "K",
+      "kpi_value": 477.25
+    },
+    {
+      "id": 64,
+      "scenario": "Scenario 63",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.42,
+      "unit": "K",
+      "kpi_value": 492.31
+    },
+    {
+      "id": 65,
+      "scenario": "Scenario 64",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 319.34,
+      "unit": "K",
+      "kpi_value": 443.19
+    },
+    {
+      "id": 66,
+      "scenario": "Scenario 65",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 361.85,
+      "unit": "K",
+      "kpi_value": 475.43
+    },
+    {
+      "id": 67,
+      "scenario": "Scenario 66",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 312.27,
+      "unit": "K",
+      "kpi_value": 451.37
+    },
+    {
+      "id": 68,
+      "scenario": "Scenario 67",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.64,
+      "unit": "K",
+      "kpi_value": 469.78
+    },
+    {
+      "id": 69,
+      "scenario": "Scenario 68",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 335.19,
+      "unit": "K",
+      "kpi_value": 478.42
+    },
+    {
+      "id": 70,
+      "scenario": "Scenario 69",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 350.76,
+      "unit": "K",
+      "kpi_value": 470.31
+    },
+    {
+      "id": 71,
+      "scenario": "Scenario 70",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 303.45,
+      "unit": "K",
+      "kpi_value": 429.72
+    },
+    {
+      "id": 72,
+      "scenario": "Scenario 71",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.45,
+      "unit": "K",
+      "kpi_value": 447.63
+    },
+    {
+      "id": 73,
+      "scenario": "Scenario 72",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 340.82,
+      "unit": "K",
+      "kpi_value": 482.59
+    },
+    {
+      "id": 74,
+      "scenario": "Scenario 73",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 329.63,
+      "unit": "K",
+      "kpi_value": 446.17
+    },
+    {
+      "id": 75,
+      "scenario": "Scenario 74",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 332.54,
+      "unit": "K",
+      "kpi_value": 474.89
+    },
+    {
+      "id": 76,
+      "scenario": "Scenario 75",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.76,
+      "unit": "K",
+      "kpi_value": 483.27
+    },
+    {
+      "id": 77,
+      "scenario": "Scenario 76",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 347.83,
+      "unit": "K",
+      "kpi_value": 493.45
+    },
+    {
+      "id": 78,
+      "scenario": "Scenario 77",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 320.18,
+      "unit": "K",
+      "kpi_value": 438.62
+    },
+    {
+      "id": 79,
+      "scenario": "Scenario 78",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 337.97,
+      "unit": "K",
+      "kpi_value": 479.83
+    },
+    {
+      "id": 80,
+      "scenario": "Scenario 79",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.57,
+      "unit": "K",
+      "kpi_value": 494.19
+    },
+    {
+      "id": 81,
+      "scenario": "Scenario 80",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 317.29,
+      "unit": "K",
+      "kpi_value": 441.53
+    },
+    {
+      "id": 82,
+      "scenario": "Scenario 81",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 358.47,
+      "unit": "K",
+      "kpi_value": 473.14
+    },
+    {
+      "id": 83,
+      "scenario": "Scenario 82",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 315.72,
+      "unit": "K",
+      "kpi_value": 454.28
+    },
+    {
+      "id": 84,
+      "scenario": "Scenario 83",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.59,
+      "unit": "K",
+      "kpi_value": 450.91
+    },
+    {
+      "id": 85,
+      "scenario": "Scenario 84",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 342.76,
+      "unit": "K",
+      "kpi_value": 486.38
+    },
+    {
+      "id": 86,
+      "scenario": "Scenario 85",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 345.27,
+      "unit": "K",
+      "kpi_value": 463.56
+    },
+    {
+      "id": 87,
+      "scenario": "Scenario 86",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 328.64,
+      "unit": "K",
+      "kpi_value": 473.12
+    },
+    {
+      "id": 88,
+      "scenario": "Scenario 87",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.35,
+      "unit": "K",
+      "kpi_value": 425.87
+    },
+    {
+      "id": 89,
+      "scenario": "Scenario 88",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 334.32,
+      "unit": "K",
+      "kpi_value": 476.49
+    },
+    {
+      "id": 90,
+      "scenario": "Scenario 89",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 353.18,
+      "unit": "K",
+      "kpi_value": 470.68
+    },
+    {
+      "id": 91,
+      "scenario": "Scenario 90",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 309.56,
+      "unit": "K",
+      "kpi_value": 434.75
+    },
+    {
+      "id": 92,
+      "scenario": "Scenario 91",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.15,
+      "unit": "K",
+      "kpi_value": 476.84
+    },
+    {
+      "id": 93,
+      "scenario": "Scenario 92",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 324.97,
+      "unit": "K",
+      "kpi_value": 458.36
+    },
+    {
+      "id": 94,
+      "scenario": "Scenario 93",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 336.42,
+      "unit": "K",
+      "kpi_value": 451.78
+    },
+    {
+      "id": 95,
+      "scenario": "Scenario 94",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 339.73,
+      "unit": "K",
+      "kpi_value": 480.57
+    },
+    {
+      "id": 96,
+      "scenario": "Scenario 95",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.08,
+      "unit": "K",
+      "kpi_value": 461.95
+    },
+    {
+      "id": 97,
+      "scenario": "Scenario 96",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 345.64,
+      "unit": "K",
+      "kpi_value": 489.74
+    },
+    {
+      "id": 98,
+      "scenario": "Scenario 97",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 323.87,
+      "unit": "K",
+      "kpi_value": 445.21
+    },
+    {
+      "id": 99,
+      "scenario": "Scenario 98",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 331.39,
+      "unit": "K",
+      "kpi_value": 473.65
+    },
+    {
+      "id": 100,
+      "scenario": "Scenario 99",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.73,
+      "unit": "K",
+      "kpi_value": 495.86
+    },
+    {
+      "id": 101,
+      "scenario": "Scenario 100",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 326.43,
+      "unit": "K",
+      "kpi_value": 453.27
+    },
+    {
+      "id": 102,
+      "scenario": "Scenario 101",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 362.94,
+      "unit": "K",
+      "kpi_value": 477.35
+    },
+    {
+      "id": 103,
+      "scenario": "Scenario 102",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 313.86,
+      "unit": "K",
+      "kpi_value": 448.52
+    },
+    {
+      "id": 104,
+      "scenario": "Scenario 103",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.02,
+      "unit": "K",
+      "kpi_value": 441.74
+    },
+    {
+      "id": 105,
+      "scenario": "Scenario 104",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 338.37,
+      "unit": "K",
+      "kpi_value": 481.93
+    },
+    {
+      "id": 106,
+      "scenario": "Scenario 105",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 344.18,
+      "unit": "K",
+      "kpi_value": 462.47
+    },
+    {
+      "id": 107,
+      "scenario": "Scenario 106",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 333.78,
+      "unit": "K",
+      "kpi_value": 475.16
+    },
+    {
+      "id": 108,
+      "scenario": "Scenario 107",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.64,
+      "unit": "K",
+      "kpi_value": 432.68
+    },
+    {
+      "id": 109,
+      "scenario": "Scenario 108",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 330.23,
+      "unit": "K",
+      "kpi_value": 471.52
+    },
+    {
+      "id": 110,
+      "scenario": "Scenario 109",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 355.95,
+      "unit": "K",
+      "kpi_value": 472.34
+    },
+    {
+      "id": 111,
+      "scenario": "Scenario 110",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 307.94,
+      "unit": "K",
+      "kpi_value": 433.26
+    },
+    {
+      "id": 112,
+      "scenario": "Scenario 111",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.67,
+      "unit": "K",
+      "kpi_value": 481.35
+    },
+    {
+      "id": 113,
+      "scenario": "Scenario 112",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 322.05,
+      "unit": "K",
+      "kpi_value": 447.19
+    },
+    {
+      "id": 114,
+      "scenario": "Scenario 113",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 348.23,
+      "unit": "K",
+      "kpi_value": 467.45
+    },
+    {
+      "id": 115,
+      "scenario": "Scenario 114",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 340.87,
+      "unit": "K",
+      "kpi_value": 481.72
+    },
+    {
+      "id": 116,
+      "scenario": "Scenario 115",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.42,
+      "unit": "K",
+      "kpi_value": 466.89
+    },
+    {
+      "id": 117,
+      "scenario": "Scenario 116",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 348.92,
+      "unit": "K",
+      "kpi_value": 494.27
+    },
+    {
+      "id": 118,
+      "scenario": "Scenario 117",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 318.75,
+      "unit": "K",
+      "kpi_value": 437.53
+    },
+    {
+      "id": 119,
+      "scenario": "Scenario 118",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 335.67,
+      "unit": "K",
+      "kpi_value": 476.38
+    },
+    {
+      "id": 120,
+      "scenario": "Scenario 119",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.91,
+      "unit": "K",
+      "kpi_value": 497.53
+    },
+    {
+      "id": 121,
+      "scenario": "Scenario 120",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 315.42,
+      "unit": "K",
+      "kpi_value": 438.76
+    },
+    {
+      "id": 122,
+      "scenario": "Scenario 121",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 360.29,
+      "unit": "K",
+      "kpi_value": 475.98
+    },
+    {
+      "id": 123,
+      "scenario": "Scenario 122",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 321.19,
+      "unit": "K",
+      "kpi_value": 464.35
+    },
+    {
+      "id": 124,
+      "scenario": "Scenario 123",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.89,
+      "unit": "K",
+      "kpi_value": 438.94
+    },
+    {
+      "id": 125,
+      "scenario": "Scenario 124",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 337.04,
+      "unit": "K",
+      "kpi_value": 480.27
+    },
+    {
+      "id": 126,
+      "scenario": "Scenario 125",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 357.28,
+      "unit": "K",
+      "kpi_value": 473.65
+    },
+    {
+      "id": 127,
+      "scenario": "Scenario 126",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 317.94,
+      "unit": "K",
+      "kpi_value": 456.82
+    },
+    {
+      "id": 128,
+      "scenario": "Scenario 127",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.56,
+      "unit": "K",
+      "kpi_value": 467.29
+    },
+    {
+      "id": 129,
+      "scenario": "Scenario 128",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 349.67,
+      "unit": "K",
+      "kpi_value": 496.41
+    },
+    {
+      "id": 130,
+      "scenario": "Scenario 129",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 316.24,
+      "unit": "K",
+      "kpi_value": 435.18
+    },
+    {
+      "id": 131,
+      "scenario": "Scenario 130",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 342.91,
+      "unit": "K",
+      "kpi_value": 483.27
+    },
+    {
+      "id": 132,
+      "scenario": "Scenario 131",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 16.04,
+      "unit": "K",
+      "kpi_value": 498.76
+    },
+    {
+      "id": 133,
+      "scenario": "Scenario 132",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 311.75,
+      "unit": "K",
+      "kpi_value": 435.41
+    },
+    {
+      "id": 134,
+      "scenario": "Scenario 133",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 365.37,
+      "unit": "K",
+      "kpi_value": 479.52
+    },
+    {
+      "id": 135,
+      "scenario": "Scenario 134",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 311.38,
+      "unit": "K",
+      "kpi_value": 447.29
+    },
+    {
+      "id": 136,
+      "scenario": "Scenario 135",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.27,
+      "unit": "K",
+      "kpi_value": 424.53
+    },
+    {
+      "id": 137,
+      "scenario": "Scenario 136",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 339.16,
+      "unit": "K",
+      "kpi_value": 482.14
+    },
+    {
+      "id": 138,
+      "scenario": "Scenario 137",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 351.59,
+      "unit": "K",
+      "kpi_value": 471.87
+    },
+    {
+      "id": 139,
+      "scenario": "Scenario 138",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 329.78,
+      "unit": "K",
+      "kpi_value": 472.41
+    },
+    {
+      "id": 140,
+      "scenario": "Scenario 139",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.16,
+      "unit": "K",
+      "kpi_value": 488.92
+    },
+    {
+      "id": 141,
+      "scenario": "Scenario 140",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 325.36,
+      "unit": "K",
+      "kpi_value": 460.27
+    },
+    {
+      "id": 142,
+      "scenario": "Scenario 141",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 343.82,
+      "unit": "K",
+      "kpi_value": 459.73
+    },
+    {
+      "id": 143,
+      "scenario": "Scenario 142",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 345.14,
+      "unit": "K",
+      "kpi_value": 485.29
+    },
+    {
+      "id": 144,
+      "scenario": "Scenario 143",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.17,
+      "unit": "K",
+      "kpi_value": 443.86
+    },
+    {
+      "id": 145,
+      "scenario": "Scenario 144",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 346.53,
+      "unit": "K",
+      "kpi_value": 492.18
+    },
+    {
+      "id": 146,
+      "scenario": "Scenario 145",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 325.64,
+      "unit": "K",
+      "kpi_value": 447.92
+    },
+    {
+      "id": 147,
+      "scenario": "Scenario 146",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 334.26,
+      "unit": "K",
+      "kpi_value": 475.83
+    },
+    {
+      "id": 148,
+      "scenario": "Scenario 147",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 16.29,
+      "unit": "K",
+      "kpi_value": 499.37
+    },
+    {
+      "id": 149,
+      "scenario": "Scenario 148",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 313.57,
+      "unit": "K",
+      "kpi_value": 437.64
+    },
+    {
+      "id": 150,
+      "scenario": "Scenario 149",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 359.15,
+      "unit": "K",
+      "kpi_value": 474.63
+    },
+    {
+      "id": 151,
+      "scenario": "Scenario 150",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 306.69,
+      "unit": "K",
+      "kpi_value": 430.48
+    },
+    {
+      "id": 152,
+      "scenario": "Scenario 151",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.83,
+      "unit": "K",
+      "kpi_value": 453.19
+    },
+    {
+      "id": 153,
+      "scenario": "Scenario 152",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 332.17,
+      "unit": "K",
+      "kpi_value": 474.92
+    },
+    {
+      "id": 154,
+      "scenario": "Scenario 153",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 347.16,
+      "unit": "K",
+      "kpi_value": 464.38
+    },
+    {
+      "id": 155,
+      "scenario": "Scenario 154",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 323.29,
+      "unit": "K",
+      "kpi_value": 465.14
+    },
+    {
+      "id": 156,
+      "scenario": "Scenario 155",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 14.24,
+      "unit": "K",
+      "kpi_value": 478.56
+    },
+    {
+      "id": 157,
+      "scenario": "Scenario 156",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 345.28,
+      "unit": "K",
+      "kpi_value": 488.93
+    },
+    {
+      "id": 158,
+      "scenario": "Scenario 157",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 333.47,
+      "unit": "K",
+      "kpi_value": 450.62
+    },
+    {
+      "id": 159,
+      "scenario": "Scenario 158",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 318.94,
+      "unit": "K",
+      "kpi_value": 457.31
+    },
+    {
+      "id": 160,
+      "scenario": "Scenario 159",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 13.73,
+      "unit": "K",
+      "kpi_value": 471.25
+    },
+    {
+      "id": 161,
+      "scenario": "Scenario 160",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 328.93,
+      "unit": "K",
+      "kpi_value": 465.76
+    },
+    {
+      "id": 162,
+      "scenario": "Scenario 161",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 363.79,
+      "unit": "K",
+      "kpi_value": 478.91
+    },
+    {
+      "id": 163,
+      "scenario": "Scenario 162",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 314.85,
+      "unit": "K",
+      "kpi_value": 453.67
+    },
+    {
+      "id": 164,
+      "scenario": "Scenario 163",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 12.38,
+      "unit": "K",
+      "kpi_value": 446.28
+    },
+    {
+      "id": 165,
+      "scenario": "Scenario 164",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 334.75,
+      "unit": "K",
+      "kpi_value": 477.43
+    },
+    {
+      "id": 166,
+      "scenario": "Scenario 165",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 341.38,
+      "unit": "K",
+      "kpi_value": 454.96
+    },
+    {
+      "id": 167,
+      "scenario": "Scenario 166",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 337.12,
+      "unit": "K",
+      "kpi_value": 478.92
+    },
+    {
+      "id": 168,
+      "scenario": "Scenario 167",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 15.36,
+      "unit": "K",
+      "kpi_value": 491.47
+    },
+    {
+      "id": 169,
+      "scenario": "Scenario 168",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 321.26,
+      "unit": "K",
+      "kpi_value": 445.83
+    },
+    {
+      "id": 170,
+      "scenario": "Scenario 169",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 353.94,
+      "unit": "K",
+      "kpi_value": 472.16
+    },
+    {
+      "id": 171,
+      "scenario": "Scenario 170",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 326.73,
+      "unit": "K",
+      "kpi_value": 469.37
+    },
+    {
+      "id": 172,
+      "scenario": "Scenario 171",
+      "equipment": "HEX-100",
+      "variable": "global_heat_transfer_coefficient",
+      "value": 11.58,
+      "unit": "K",
+      "kpi_value": 430.92
+    },
+    {
+      "id": 173,
+      "scenario": "Scenario 172",
+      "equipment": "HEX-100",
+      "variable": "cold_fluid_temperature",
+      "value": 342.37,
+      "unit": "K",
+      "kpi_value": 485.71
+    },
+    {
+      "id": 174,
+      "scenario": "Scenario 173",
+      "equipment": "Fuel",
+      "variable": "temperature",
+      "value": 328.19,
+      "unit": "K",
+      "kpi_value": 443.58
+    },
+    {
+      "id": 175,
+      "scenario": "Scenario 174",
+      "equipment": "Air",
+      "variable": "temperature",
+      "value": 331.82,
+      "unit": "K",
+      "kpi_value": 474.29
+    }
+  ],
+  "columns": [
+    {
+      "key": "id",
+      "header": "ID",
+      "sortable": true
+    },
+    {
+      "key": "scenario",
+      "header": "Scenario",
+      "sortable": true
+    },
+    {
+      "key": "equipment",
+      "header": "Equipment",
+      "sortable": true
+    },
+    {
+      "key": "variable",
+      "header": "Variable",
+      "sortable": true
+    },
+    {
+      "key": "value",
+      "header": "Value",
+      "sortable": true
+    },
+    {
+      "key": "unit",
+      "header": "Unit",
+      "sortable": false
+    },
+    {
+      "key": "kpi_value",
+      "header": "KPI Value",
+      "sortable": true
+    }
+  ]
+} 
