@@ -1,15 +1,5 @@
 import { useState } from 'react';
-
-export interface Tab {
-  id: string;
-  label: string;
-  content: React.ReactNode;
-}
-
-interface PageTabsProps {
-  tabs: Tab[];
-  defaultActiveTab?: string;
-}
+import { PageTabsProps } from '../../types';
 
 function PageTabs({ tabs, defaultActiveTab }: PageTabsProps) {
   const [activeTab, setActiveTab] = useState(defaultActiveTab || tabs[0]?.id);

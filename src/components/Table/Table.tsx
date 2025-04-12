@@ -1,26 +1,7 @@
 import { useState } from 'react';
 import Pagination from './Pagination';
 import { FiChevronUp, FiChevronDown, FiArrowDown, FiArrowUp } from 'react-icons/fi';
-
-export interface Column {
-  key: string;
-  header: string;
-  sortable: boolean;
-}
-
-export interface TableProps {
-  data: Record<string, any>[];
-  columns: Column[];
-  itemsPerPage?: number;
-  title?: string;
-}
-
-export type SortDirection = 'asc' | 'desc' | null;
-
-export interface SortState {
-  column: string | null;
-  direction: SortDirection;
-}
+import { TableProps, SortState } from '../../types';
 
 function Table({ data, columns, itemsPerPage = 10, title }: TableProps) {
   const [currentPage, setCurrentPage] = useState(1);
