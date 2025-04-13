@@ -16,15 +16,15 @@ function App() {
 
   // Initialize the report prompt directly in state
   const [reportPrompt, setReportPrompt] = useState<string>(`
-    You are an expert report generator. Your task is to create a professional and cohesive HTML report based on the provided JSON data. I will attach the json data at the bottom of this instruction set. The goal of this report is to summarize the results of experiments run to tune a Key Performance Indicator (KPI) and identify the variables that contributed the most to improving it. The generated HTML should be valid and directly usable for conversion to a PDF document or printing from a browser.
+   You are an expert report generator. Your task is to create a professional and cohesive HTML report based on the provided JSON data. I will attach the json data at the bottom of this instruction set. The goal of this report is to summarize the results of experiments run to tune a Key Performance Indicator (KPI) and identify the variables that contributed the most to improving it. The generated HTML should be valid and directly usable for conversion to a PDF document or printing from a browser.
 
-**Crucially, ensure the report is consistent in structure and style across different runs, provides meaningful insights, has professional styling, uses consistent titles, and displays all data from the JSON in some form. Furthermore, analyze the data to determine the most insightful way to visually represent key findings using charts or graphs within the report.**
+**Crucially, ensure the report is consistent in structure and style across different runs, provides meaningful insights, has professional styling, uses consistent titles, and displays all data from the JSON in some form. Furthermore, analyze the data to determine the most insightful way to visually represent key findings using appropriate charts or graphs within the report. Ensure that all generated charts effectively communicate the data, have clear titles, and all necessary axes and legends are appropriately labeled based on the data being visualized.**
 
 **Detailed Instructions:**
 
 1.  **Analyze the Data and Structure the Report Consistently:**
     * Carefully analyze the provided JSON data to understand its content and relationships.
-    * The main title of the report should be "KPI Optimization Report". Include the date of the report below the title.
+    * The main title of the report should be "KPI Optimization Report".
     * Structure the report into the following sections with these exact titles:
         * **Executive Summary**
         * **Top KPI Influencers**
@@ -39,20 +39,20 @@ function App() {
         * Use 'main_summary_text' and 'top_summary_text' to provide a concise overview of the experiment's purpose and key findings.
         * Go beyond simply stating the summaries; interpret them. For example, highlight the overall trend in KPI improvement, the significance of the top variables, and any limitations or caveats mentioned.
         * Mention the number of scenarios analyzed and the range of KPI values observed.
-        * **Consider a chart or graph here to visually represent the range or distribution of KPI values across all scenarios.** Analyze if a histogram, box plot, or similar visualization would be insightful.
+        * **Analyze the data to determine the most insightful chart or graph to represent the range or distribution of KPI values across all scenarios.** Consider options like histograms, box plots, or other appropriate visualizations.
     * **Top KPI Influencers:**
         * Analyze the 'top_impact' and 'top_variables' data to identify the most critical variables affecting the KPI.
         * Present this analysis in a table (as specified below).
         * Provide insight into the *relative importance* of each variable based on its weightage. Discuss the practical implications of these findings.
-        * **Analyze if a bar chart showing the impact weightage of the top variables would be a meaningful visual representation.**
+        * **Analyze the 'top_impact' and 'top_variables' data to choose the best chart or graph to visualize the relative impact of the top variables.** Bar charts are a likely candidate, but consider other options if the data suggests them.
     * **Variable Analysis:**
         * Use 'impact_summary_text', 'setpoint_impact_summary', and 'condition_impact_summary' to give a detailed analysis of how different types of variables (setpoints and conditions) affect the KPI.
         * If possible, identify any interactions or dependencies between variables.
         * Present the details from 'setpoint_impact_summary' and 'condition_impact_summary' in separate tables.
-        * **Analyze if charts or graphs could visualize the impact of specific setpoints or conditions on the KPI.** For example, if 'setpoint_impact_summary' or 'condition_impact_summary' contains data suitable for comparison, consider bar charts or grouped bar charts.
+        * **Analyze the data within 'setpoint_impact_summary' and 'condition_impact_summary' to determine if charts or graphs can effectively visualize the impact of specific setpoints or conditions on the KPI.** Consider bar charts, line charts, or other suitable visualizations based on the data structure.
     * **Experimental Results:**
         * Display *all* scenarios and their corresponding data from the main 'data' array in a comprehensive table.
-        * **Analyze if a scatter plot could be used to visualize the relationship between key variables and the KPI value across all scenarios.** Determine which variables would be most informative to plot against the KPI.
+        * **Analyze the 'data' array to determine if a scatter plot or other type of chart could effectively visualize the relationship between key variables and the KPI value across all scenarios.** Decide which variables would be most informative to visualize.
     * **Conclusion:**
         * Summarize the key findings and provide recommendations for future experiments or adjustments to the process.
 
@@ -70,7 +70,7 @@ function App() {
         * Specify column widths appropriately to prevent content overflow.
     * **Chart/Graph Styling:**
         * **For simplicity and compatibility with PDF conversion, consider using text-based or simple SVG charts/graphs rendered directly in the HTML.** If SVG is used, ensure it's embedded directly within the HTML.
-        * Ensure charts have clear titles, axis labels (if applicable), and legends (if needed).
+        * **Ensure all generated charts have clear titles (using <h2>) that describe the visualization. All necessary axes must be labeled with the variable or metric they represent, and legends should be included if multiple data series are present.** The labels should be derived directly from the data being visualized.
         * Maintain a consistent color scheme for all visualizations.
     * **Page Layout (A4):**
         * Control line height and spacing for better readability.
@@ -80,6 +80,7 @@ function App() {
 
 4.  **Ensure Comprehensive Data Display:**
     * The report *must* include all relevant data from the JSON.
+    * Do not include any hidden elements (like in scrollable containers) in the report, as the report will be printed.
     * The 'Experimental Results' section, in particular, should present all scenarios and their data points from the 'data' array in a table. The charts and graphs should *supplement* this data, not replace it entirely.
 
 5.  **Generate HTML Code:**
