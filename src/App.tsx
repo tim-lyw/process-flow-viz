@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Table from './components/Table';
 import PageTabs from './components/PageTabs';
@@ -8,8 +8,12 @@ import { Node, Edge } from './types';
 import { v4 as uuidv4 } from 'uuid';
 import Report from './components/Report/Report';
 import Analytics from './components/Analytics';
+import FutureImprovementsModal from './components/FutureImprovementsModal';
 
 function App() {
+  // State to control the modal visibility
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   // Initialize the report prompt directly in state
   const [reportPrompt, setReportPrompt] = useState<string>(`
     You are an expert report generator. Your task is to create a professional and cohesive HTML report based on the provided JSON data. I will attach the json data at the bottom of this instruction set. The goal of this report is to summarize the results of experiments run to tune a Key Performance Indicator (KPI) and identify the variables that contributed the most to improving it. The generated HTML should be valid and directly usable for conversion to a PDF document or printing from a browser.
@@ -171,6 +175,12 @@ function App() {
     }
   ]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsModalOpen(true)
+    }, 1000);
+  }, []);
+
   // Handler for adding a new node
   const handleAddNode = (nodeData: Omit<Node, 'id'>) => {
     const newNode: Node = {
@@ -289,6 +299,12 @@ function App() {
       <main className="flex-grow px-8 py-6">
         <PageTabs tabs={tabs} defaultActiveTab="task1" />
       </main>
+
+      {/* Future Improvements Modal */}
+      <FutureImprovementsModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   );
 }

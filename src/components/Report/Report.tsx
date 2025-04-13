@@ -553,20 +553,20 @@ function Report({ prompt, onPromptChange, reportData, onReportDataChange }: Repo
       
       {/* Prompt Editor Modal */}
       {showPromptEditor && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-          <div className="bg-gray-100 text-gray-900 p-8 rounded-lg w-4/5 max-w-3xl max-h-[90vh] overflow-auto">
-            <h2 className="text-xl font-bold mb-4 text-blue-600">Edit Prompt</h2>
+        <div className="fixed inset-0 backdrop-blur-xs flex justify-center items-center z-50">
+          <div className="bg-gray-800 rounded-lg shadow-lg p-6 max-w-6xl w-full border border-gray-700 max-h-[90vh] overflow-auto">
+            <h2 className="text-xl font-bold text-white mb-4">Edit Prompt</h2>
             
             <textarea
               value={prompt}
               onChange={(e) => onPromptChange(e.target.value)}
-              className="w-full h-[60vh] p-3 border border-gray-300 rounded font-mono text-sm leading-normal resize-y cursor-text"
+              className="w-full h-[60vh] p-3 bg-gray-700 border border-gray-600 rounded-md text-white font-mono text-sm leading-normal resize-y cursor-text focus:ring-blue-500 focus:border-blue-500"
             />
             
             <div className="mt-6 flex justify-end">
               <button
                 onClick={() => setShowPromptEditor(false)}
-                className="bg-gray-500 hover:bg-gray-600 text-white rounded px-4 py-2 cursor-pointer"
+                className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors cursor-pointer"
               >
                 Close
               </button>
