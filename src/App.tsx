@@ -6,8 +6,86 @@ import ProcessFlow from './components/ProcessFlow';
 import tableData from './mockTableData.json';
 import { Node, Edge } from './types';
 import { v4 as uuidv4 } from 'uuid';
+import Report from './components/Report/Report';
 
 function App() {
+  // Initialize the report prompt directly in state
+  const [reportPrompt, setReportPrompt] = useState<string>(`
+    You are an expert report generator. Your task is to create a professional and cohesive HTML report based on the provided JSON data. I will attach the json data at the bottom of this instruction set. The goal of this report is to summarize the results of experiments run to tune a Key Performance Indicator (KPI) and identify the variables that contributed the most to improving it. The generated HTML should be valid and directly usable for conversion to a PDF document or printing from a browser.
+
+**Crucially, ensure the report is consistent in structure and style across different runs, provides meaningful insights, has professional styling, uses consistent titles, and displays all data from the JSON in some form. Furthermore, analyze the data to determine the most insightful way to visually represent key findings using charts or graphs within the report.**
+
+**Detailed Instructions:**
+
+1.  **Analyze the Data and Structure the Report Consistently:**
+    * Carefully analyze the provided JSON data to understand its content and relationships.
+    * The main title of the report should be "KPI Optimization Report". Include the date of the report below the title.
+    * Structure the report into the following sections with these exact titles:
+        * **Executive Summary**
+        * **Top KPI Influencers**
+        * **Variable Analysis**
+        * **Experimental Results**
+        * **Conclusion**
+    * Maintain this section order and naming convention in every report generated.
+    * These titles should be left aligned.
+
+2.  **Generate Insightful Content and Visualizations:**
+    * **Executive Summary:**
+        * Use 'main_summary_text' and 'top_summary_text' to provide a concise overview of the experiment's purpose and key findings.
+        * Go beyond simply stating the summaries; interpret them. For example, highlight the overall trend in KPI improvement, the significance of the top variables, and any limitations or caveats mentioned.
+        * Mention the number of scenarios analyzed and the range of KPI values observed.
+        * **Consider a chart or graph here to visually represent the range or distribution of KPI values across all scenarios.** Analyze if a histogram, box plot, or similar visualization would be insightful.
+    * **Top KPI Influencers:**
+        * Analyze the 'top_impact' and 'top_variables' data to identify the most critical variables affecting the KPI.
+        * Present this analysis in a table (as specified below).
+        * Provide insight into the *relative importance* of each variable based on its weightage. Discuss the practical implications of these findings.
+        * **Analyze if a bar chart showing the impact weightage of the top variables would be a meaningful visual representation.**
+    * **Variable Analysis:**
+        * Use 'impact_summary_text', 'setpoint_impact_summary', and 'condition_impact_summary' to give a detailed analysis of how different types of variables (setpoints and conditions) affect the KPI.
+        * If possible, identify any interactions or dependencies between variables.
+        * Present the details from 'setpoint_impact_summary' and 'condition_impact_summary' in separate tables.
+        * **Analyze if charts or graphs could visualize the impact of specific setpoints or conditions on the KPI.** For example, if 'setpoint_impact_summary' or 'condition_impact_summary' contains data suitable for comparison, consider bar charts or grouped bar charts.
+    * **Experimental Results:**
+        * Display *all* scenarios and their corresponding data from the main 'data' array in a comprehensive table.
+        * **Analyze if a scatter plot could be used to visualize the relationship between key variables and the KPI value across all scenarios.** Determine which variables would be most informative to plot against the KPI.
+    * **Conclusion:**
+        * Summarize the key findings and provide recommendations for future experiments or adjustments to the process.
+
+3.  **Apply Professional and Consistent Styling:**
+    * Use inline CSS styles to format the report for a professional appearance suitable for printing or PDF conversion.
+    * **Consistent Font Family and Size:** Use a serif font (e.g., "Georgia", "Times New Roman") for body text and a sans-serif font (e.g., "Arial", "Helvetica") for headings. Set the base font size to 12pt for body text and adjust heading sizes accordingly.
+    * **Heading Styles:**
+        * Use '<h1>' for main section titles (e.g., "Executive Summary").
+        * Use '<h2>' for table titles or sub-section titles, as well as titles for any generated charts or graphs.
+        * Use '<h3>' for any further sub-divisions within tables (if needed).
+        * Ensure consistent use of font weight, color, and spacing for headings.
+    * **Table Styles:**
+        * Use borders, padding, and alternating row colors for tables to improve readability.
+        * Ensure table headers are clearly distinguishable (e.g., using a different background color or font weight).
+        * Specify column widths appropriately to prevent content overflow.
+    * **Chart/Graph Styling:**
+        * **For simplicity and compatibility with PDF conversion, consider using text-based or simple SVG charts/graphs rendered directly in the HTML.** If SVG is used, ensure it's embedded directly within the HTML.
+        * Ensure charts have clear titles, axis labels (if applicable), and legends (if needed).
+        * Maintain a consistent color scheme for all visualizations.
+    * **Page Layout (A4):**
+        * Control line height and spacing for better readability.
+    * **Emphasis:** Use bold or italic text sparingly for emphasis.
+    * **Color Palette:** Use a limited and professional color palette (e.g., shades of gray, with a subtle accent color if desired).
+    * **Spacing:** Use consistent spacing between paragraphs, headings, and table elements, as well as around charts and graphs.
+
+4.  **Ensure Comprehensive Data Display:**
+    * The report *must* include all relevant data from the JSON.
+    * The 'Experimental Results' section, in particular, should present all scenarios and their data points from the 'data' array in a table. The charts and graphs should *supplement* this data, not replace it entirely.
+
+5.  **Generate HTML Code:**
+    * Write the HTML code for the report, enclosed within a single \`<div>\` element.
+    * Apply all CSS styling directly as inline styles to each HTML element.
+    * Do not include \`<!DOCTYPE html>\`, \`<html>\`, \`<head>\`, or \`<body>\` tags.
+  `);
+
+  // State for the uploaded JSON data
+  const [reportData, setReportData] = useState<any>(null);
+
   // State for process flow visualization (moved from ProcessFlow component)
   const [nodes, setNodes] = useState<Node[]>([
     // Add some initial test nodes in a hierarchical structure
@@ -47,7 +125,7 @@ function App() {
       type: 'type3'
     }
   ]);
-  
+
   const [edges, setEdges] = useState<Edge[]>([
     // Add edges to create a hierarchical flow
     {
@@ -141,12 +219,12 @@ function App() {
   // When a node is deleted, remove all edges connected to it
   const handleNodeDeletion = (id: string) => {
     handleDeleteNode(id);
-    
+
     // Remove all edges connected to this node
     const nodeIds = new Set(nodes.filter(node => node.id !== id).map(node => node.id));
-    setEdges(prevEdges => 
-      prevEdges.filter(edge => 
-        nodeIds.has(edge.upstreamNodeId) && 
+    setEdges(prevEdges =>
+      prevEdges.filter(edge =>
+        nodeIds.has(edge.upstreamNodeId) &&
         nodeIds.has(edge.downstreamNodeId)
       )
     );
@@ -170,7 +248,7 @@ function App() {
       id: 'task2',
       label: 'Task 2: Process Flow Visualization',
       content: (
-        <ProcessFlow 
+        <ProcessFlow
           nodes={nodes}
           edges={edges}
           onAddNode={handleAddNode}
@@ -184,8 +262,15 @@ function App() {
     },
     {
       id: 'task3',
-      label: 'Task 3',
-      content: (<></>)
+      label: 'Task 3: Report Generator',
+      content: (
+        <Report
+          prompt={reportPrompt}
+          onPromptChange={setReportPrompt}
+          reportData={reportData}
+          onReportDataChange={setReportData}
+        />
+      )
     },
     {
       id: 'task4',

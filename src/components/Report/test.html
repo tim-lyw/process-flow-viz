@@ -1,0 +1,198 @@
+<div style="font-family: sans-serif; font-size: 10pt; width: 210mm; margin: 0 auto; padding: 10mm;">
+  <div style="text-align: center; margin-bottom: 15px;">
+    <h1 style="font-size: 16pt; margin-bottom: 5px;">KPI Tuning Experiment Report</h1>
+    <p style="font-size: 9pt; color: #777;">Generated on April 13, 2025</p>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size: 12pt; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Executive Summary</h2>
+    <p style="line-height: 1.5;">Based on the simulations performed, following variables have the highest impact: <b>temperature on Equipment HEX-100, temperature on Equipment Fuel, temperature on Equipment Air.</b></p>
+    <p style="line-height: 1.5;"><b>Focus on the following variables to achieve top 5% of KPI.</b></p>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size: 12pt; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Top Impact Analysis</h2>
+    <p style="margin-bottom: 10px;">The following chart shows the relative impact of the top variables on the KPI:</p>
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; align-items: center;">
+          <div style="width: 47.903%; background-color: #4CAF50; color: white; padding: 8px 10px; font-size: 9pt; text-align: right; border-radius: 5px;">
+            Air Temperature (47.90%)
+          </div>
+          <div style="margin-left: 10px; font-size: 9pt;">47.90%</div>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <div style="width: 27.853%; background-color: #008CBA; color: white; padding: 8px 10px; font-size: 9pt; text-align: right; border-radius: 5px;">
+            Fuel Temperature (27.85%)
+          </div>
+          <div style="margin-left: 10px; font-size: 9pt;">27.85%</div>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <div style="width: 24.244%; background-color: #f44336; color: white; padding: 8px 10px; font-size: 9pt; text-align: right; border-radius: 5px;">
+            HEX-100 Cold Fluid Temperature (24.24%)
+          </div>
+          <div style="margin-left: 10px; font-size: 9pt;">24.24%</div>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <div style="width: 0%; background-color: #ccc; color: #555; padding: 8px 10px; font-size: 9pt; text-align: right; border-radius: 5px;">
+            Others (0.00%)
+          </div>
+          <div style="margin-left: 10px; font-size: 9pt;">0.00%</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-bottom: 10px;">Details of the top variables:</p>
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Equipment</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Type</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Value</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">HEX-100</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Setpoint</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">cold_fluid_temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">329.974</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Fuel</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Setpoint</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">364.524</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Air</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">Setpoint</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">305.88</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size: 12pt; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Detailed Variable Impact</h2>
+    <p style="line-height: 1.5; margin-bottom: 10px;">Based on the simulation, following weightages are assigned based on how each variable impacts the KPI. Prioritize analyzing the variables with higher weightages.</p>
+
+    <h3 style="font-size: 11pt; margin-bottom: 5px;">Setpoint Impact</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Equipment</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Setpoint</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Weightage</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">HEX-100</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">cold_fluid_temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">24.244</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Fuel</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">27.853</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Air</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">temperature</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">47.903</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">K</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 11pt; margin-bottom: 5px;">Condition Impact</h3>
+    <p style="line-height: 1.5;">No condition impact data available.</p>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size: 12pt; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Simulation Overview</h2>
+    <p style="line-height: 1.5; margin-bottom: 10px;">Trend of KPI Value across Simulated Scenarios:</p>
+    <div style="position: relative; width: 100%; height: 150px; border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+      <div style="position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #ccc;"></div>
+      <div style="position: absolute; bottom: 0; left: calc(0% - 5px); width: 10px; height: 10px; border-radius: 50%; background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: calc((${500.895 - 400}) / (500.895 - 400) * 100px); left: calc(0% - 3px); width: 6px; height: calc((${500.895 - 400}) / (500.895 - 400) * 100px); background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: 0; left: calc(20% - 5px); width: 10px; height: 10px; border-radius: 50%; background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: calc((${461.337 - 400}) / (500.895 - 400) * 100px); left: calc(20% - 3px); width: 6px; height: calc((${461.337 - 400}) / (500.895 - 400) * 100px); background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: 0; left: calc(40% - 5px); width: 10px; height: 10px; border-radius: 50%; background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: calc((${441.178 - 400}) / (500.895 - 400) * 100px); left: calc(40% - 3px); width: 6px; height: calc((${441.178 - 400}) / (500.895 - 400) * 100px); background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: 0; left: calc(60% - 5px); width: 10px; height: 10px; border-radius: 50%; background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: calc((${433.884 - 400}) / (500.895 - 400) * 100px); left: calc(60% - 3px); width: 6px; height: calc((${433.884 - 400}) / (500.895 - 400) * 100px); background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: 0; left: calc(80% - 5px); width: 10px; height: 10px; border-radius: 50%; background-color: #007bff;"></div>
+      <div style="position: absolute; bottom: calc((${416.687 - 400}) / (500.895 - 400) * 100px); left: calc(80% - 3px); width: 6px; height: calc((${416.687 - 400}) / (500.895 - 400) * 100px); background-color: #007bff;"></div>
+      <div style="position: absolute; left: 0; bottom: -15px; font-size: 8pt;">Scenario 0</div>
+      <div style="position: absolute; left: calc(20% - 15px); bottom: -15px; font-size: 8pt;">Scenario 1</div>
+      <div style="position: absolute; left: calc(40% - 15px); bottom: -15px; font-size: 8pt;">Scenario 2</div>
+      <div style="position: absolute; left: calc(60% - 15px); bottom: -15px; font-size: 8pt;">Scenario 3</div>
+      <div style="position: absolute; left: calc(80% - 15px); bottom: -15px; font-size: 8pt;">Scenario 4</div>
+      <div style="position: absolute; left: -30px; top: 0; font-size: 8pt;">500</div>
+      <div style="position: absolute; left: -30px; top: calc(50% - 5px); font-size: 8pt;">450</div>
+      <div style="position: absolute; left: -30px; bottom: 0; font-size: 8pt;">400</div>
+      <div style="position: absolute; left: -40px; top: -10px; font-size: 8pt;">KPI Value</div>
+    </div>
+
+    <p style="line-height: 1.5; margin-bottom: 10px;">Detailed overview of the simulated scenarios and their corresponding KPI values:</p>
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Scenario</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">HEX-100 Cold Fluid Temp (K)</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fuel Temperature (K)</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Air Temperature (K)</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">KPI Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Scenario 0</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">329.974</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">364.524</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">305.88</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">500.895</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Scenario 1</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">325.139</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">314.104</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">316.58</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">461.337</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Scenario 2</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">344.451</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">302.123</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">304.454</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">441.178</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Scenario 3</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">338.532</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">312.849</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">352.296</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">433.884</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="border: 1px solid #ddd; padding: 8px;">Scenario 4</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">292.145</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">396.08</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">313.274</td>
+          <td style="border: 1px solid #ddd; padding: 8px;">416.687</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
