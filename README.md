@@ -2,7 +2,7 @@
 
 ## Features
 
-The application includes three main components accessible through tabs:
+The application includes four main components accessible through tabs:
 
 ### 1. Reusable All-in-One Table
 - Sortable columns with dynamic rendering
@@ -11,8 +11,7 @@ The application includes three main components accessible through tabs:
 - Responsive design
 
 ### 2. Process Flow Visualization
-- Interactive node-edge diagram for visualizing process flows
-- Drag-and-drop interface for arranging nodes
+- Node-edge diagram for visualizing process flows
 - Add, edit, and delete nodes and edges
 - Three node types with different visual representations
 - Auto-layout using dagre for hierarchical visualization
@@ -27,7 +26,6 @@ The application includes three main components accessible through tabs:
 ### 4. Analytics Dashboard
 - Visual representation of process data
 - Multiple chart types (Bar, Pie, Scatter, Radar)
-- Interactive and responsive visualizations
 
 ## Technology Stack
 
@@ -113,17 +111,3 @@ yarn preview
 2. (Optional) Edit the AI prompt to customize the report generation
 3. Click "Generate Report" to create a report based on the data
 4. View the generated report in a new window, which can be printed or saved as PDF
-
-## Future Improvements
-
-- Custom hooks for state management
-- Context providers for shared state
-- Better error handling and validation
-- Optimized report generation
-- More user-friendly loading states
-- Consistent theming throughout the application
-- Data persistence between sessions
-
-## License
-
-[MIT License](LICENSE)
