@@ -17,6 +17,7 @@ function FutureImprovementsModal({ isOpen, onClose }: FutureImprovementsModalPro
 
                     <ol className="list-decimal pl-6 space-y-2">
                         <li>Implement custom hooks for state management (useProcessFlow, useReportGenerator) to reduce App.tsx complexity and separate concerns.</li>
+                        <li>Currently, navigating out of the report page and back in will reset the process flow. This is not ideal from a UX perspective - a custom hook will solve this.</li>
                         <li>Extract the initial process flow data (nodes and edges) into a separate configuration file for better maintainability and testing.</li>
                         <li>Optimize handler functions with useCallback to prevent unnecessary re-renders when state objects change.</li>
                         <li>Generally moving more reused logic and css into reusable components</li>
