@@ -1,6 +1,4 @@
-# Process Flow Visualization Tool
-
-A modern web application for creating, visualizing, and analyzing process flows with AI-powered report generation capabilities. Built with React, TypeScript, and Vite.
+# Take Home Assignment
 
 ## Features
 
