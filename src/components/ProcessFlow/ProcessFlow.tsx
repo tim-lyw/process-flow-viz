@@ -166,14 +166,11 @@ function ProcessFlow({
             <div className="flex flex-col lg:flex-row gap-8">
 
                 {/* Process Flow Visualization */}
-                <div>
-                    <h2 className="text-xl font-bold text-white mb-4">Process Flow Visualization</h2>
-                    <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
-                        <ProcessFlowCanvas
-                            nodes={nodes}
-                            edges={edges}
-                        />
-                    </div>
+                <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                    <ProcessFlowCanvas
+                        nodes={nodes}
+                        edges={edges}
+                    />
                 </div>
 
                 <div className="flex flex-row gap-16 w-full justify-between">

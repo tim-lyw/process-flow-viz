@@ -89,4 +89,60 @@ export interface ConfirmationDialogProps {
 export interface ProcessFlowCanvasProps {
   nodes: Node[];
   edges: Edge[];
+}
+
+// Chart Types
+import { ReactNode } from 'react';
+import { ChartData, ChartOptions } from 'chart.js';
+
+export interface ChartWrapperProps {
+  title: string;
+  description: string;
+  children: ReactNode;
+  className?: string;
+}
+
+export interface BarChartProps {
+  title: string;
+  description: string;
+  data: ChartData<'bar'>;
+  options?: ChartOptions<'bar'>;
+  height?: number;
+  horizontal?: boolean;
+}
+
+export interface PieChartProps {
+  title: string;
+  description: string;
+  data: ChartData<'pie'>;
+  options?: ChartOptions<'pie'>;
+  height?: number;
+  showPercentages?: boolean;
+}
+
+export interface ScatterChartProps {
+  title: string;
+  description: string;
+  data: ChartData<'scatter'>;
+  options?: ChartOptions<'scatter'>;
+  height?: number;
+  xAxisLabel?: string;
+  yAxisLabel?: string;
+}
+
+export interface RadarChartProps {
+  title: string;
+  description: string;
+  data: ChartData<'radar'>;
+  options?: ChartOptions<'radar'>;
+  height?: number;
+  fill?: boolean;
+}
+
+// Report Types
+export interface ReportProps {
+  prompt: string;
+  onPromptChange: (newPrompt: string) => void;
+  reportData: any;
+  onReportDataChange: (data: any) => void;
 } 

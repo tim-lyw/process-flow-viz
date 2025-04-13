@@ -7,6 +7,7 @@ import tableData from './mockTableData.json';
 import { Node, Edge } from './types';
 import { v4 as uuidv4 } from 'uuid';
 import Report from './components/Report/Report';
+import Analytics from './components/Analytics';
 
 function App() {
   // Initialize the report prompt directly in state
@@ -274,8 +275,8 @@ function App() {
     },
     {
       id: 'task4',
-      label: 'Task 4',
-      content: (<></>)
+      label: 'Task 4: Analytics Dashboard',
+      content: (<Analytics />)
     }
   ];
 

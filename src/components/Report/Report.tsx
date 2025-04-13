@@ -1,13 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { FiLoader, FiInfo, FiCheck, FiUpload, FiEdit, FiEye, FiRefreshCw, FiAlertTriangle, FiCheckCircle, FiDatabase } from 'react-icons/fi';
 import mockResultsData from '../../mock_results 1.json';
-
-interface ReportProps {
-  prompt: string;
-  onPromptChange: (newPrompt: string) => void;
-  reportData: any;
-  onReportDataChange: (data: any) => void;
-}
+import { ReportProps } from '../../types';
 
 // Get API URL from environment variable or use default
 const API_URL = import.meta.env.VITE_API_URL;
@@ -341,13 +335,6 @@ function Report({ prompt, onPromptChange, reportData, onReportDataChange }: Repo
 
   return (
     <div className="font-sans">
-      <h1 className="text-2xl font-bold mb-6">KPI Optimization Report Generator</h1>
-      
-      <div className="mb-8">
-        <p className="text-gray-300">
-          Generate professional HTML reports from JSON data using AI. Follow the steps below to create your report.
-        </p>
-      </div>
       
       {/* Step 1: Upload JSON */}
       <div className={`mb-6 p-6 rounded-lg border ${reportData ? 'border-green-500 bg-gray-800/30' : 'border-gray-700 bg-gray-800/50'}`}>
